@@ -10,11 +10,13 @@
         <h1><a href='/'>Snippetbox</a></h1>
     </header>
     <nav>
-        <a href='/'>Домашняя страница</a>
+        <a href='/'>{{template "title" .}}</a>
     </nav>
     <main>
         {{template "main" .}}
     </main>
+    <!-- Вызываем шаблон подвала -->
+    {{template "footer" .}}
 </body>
 </html>
 {{end}}
