@@ -44,6 +44,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// exemple:  http://127.0.0.1:4000/snippet?id=10
 func showSnippet(w http.ResponseWriter, r *http.Request) {
 	id, err := strconv.Atoi(r.URL.Query().Get("id"))
 	if err != nil || id < 1 {
