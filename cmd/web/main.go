@@ -2,6 +2,7 @@
 package main
 
 import (
+	_ "github.com/heroku/x/hmetrics/onload"
 	"log"
 	"net/http"
 	"path/filepath"
